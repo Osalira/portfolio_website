@@ -204,7 +204,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         <div className="bg-gradient-to-r from-primary-600 to-blue-600 dark:from-primary-500 dark:to-blue-500 rounded-xl p-8 text-center text-white">
           <h3 className="text-2xl font-bold mb-3">Interested in learning more?</h3>
           <p className="mb-6 text-primary-50">
-            Let's discuss this project and how my experience can benefit your team.
+            Let&apos;s discuss this project and how my experience can benefit your team.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

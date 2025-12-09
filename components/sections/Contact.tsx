@@ -45,8 +45,8 @@ export default function Contact() {
           <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
           <div className="w-20 h-1 bg-primary-600 dark:bg-primary-400 mx-auto mb-4"></div>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            I'm open to software engineering opportunities. 
-            Let's connect and discuss how I can contribute to your team!
+            I&apos;m open to software engineering opportunities. 
+            Let&apos;s connect and discuss how I can contribute to your team!
           </p>
         </motion.div>
 
