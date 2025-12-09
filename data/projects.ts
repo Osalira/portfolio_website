@@ -46,7 +46,6 @@ export const projects: Project[] = [
       'Email/Password + Google OAuth authentication',
       'Stripe subscriptions with webhook-driven entitlement checks',
       'AI goal planning: generates step-by-step task plans (editable)',
-      'Excel import/export for bulk task management',
       'Progress dashboards with visualizations (Recharts)',
       'Dark mode and responsive design'
     ],
