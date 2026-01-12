@@ -166,6 +166,61 @@ export const projects: Project[] = [
     image: '/projects/trading.png',
     category: 'Distributed Systems',
     featured: true
+  },
+  {
+    id: '4',
+    title: 'SozoFitness',
+    slug: 'sozofitness',
+    tagline: 'Full-Stack Fitness Scheduling & Payments SaaS',
+    description: 'A production SaaS platform for booking and managing paid fitness sessions with Stripe payments, Zoom integration, and automated reminders.',
+    longDescription: 'SozoFitness is a full-stack SaaS web application for booking and managing paid fitness sessions. Built with Next.js App Router and deployed to AWS, it handles authentication, payment processing, video meeting generation, and automated notifications through a separate worker service.',
+    problem: 'Fitness professionals need a reliable platform to manage client bookings, process payments, generate meeting links, and send automated reminders—all while maintaining production-grade reliability and security.',
+    solution: 'Developed a production-ready SaaS platform with Next.js + TypeScript, PostgreSQL (RDS), and Prisma for data management. Implemented Stripe webhook handling with idempotent event processing, Zoom API integration for meeting links, and a separate worker service for email/SMS reminders. Deployed to AWS using Copilot (ECS/Fargate) with custom HTTPS domain, secure secrets management, and environment-based configuration.',
+    techStack: [
+      'Next.js (App Router)',
+      'TypeScript',
+      'PostgreSQL (AWS RDS)',
+      'Prisma',
+      'Stripe API',
+      'Zoom API',
+      'SendGrid',
+      'Twilio',
+      'AWS (ECS/Fargate, ALB, Route 53, ACM)',
+      'AWS Copilot',
+      'SSM/Secrets Manager'
+    ],
+    features: [
+      'User authentication and session management',
+      'Stripe Checkout integration with webhook event handling',
+      'Subscription and one-time payment support',
+      'Automated entitlement provisioning via webhooks',
+      'Zoom meeting link generation for appointments',
+      'Email and SMS reminder notifications',
+      'Background worker service for async job processing',
+      'Health checks and structured logging',
+      'Custom HTTPS domain (mysozofitness.com)',
+      'Environment-based configuration (dev/staging/prod)'
+    ],
+    highlights: [
+      'Production AWS deployment: ECS/Fargate with Copilot, RDS Postgres, ALB, Route 53/ACM for HTTPS',
+      'Stripe webhooks: signature verification, idempotency keys, event deduplication, failure handling',
+      'Data layer: Prisma schema, migrations, production migrate workflow',
+      'Worker service: polling/cron-like reminders with retry strategy and notification safety',
+      'Security: secrets in SSM/Copilot, least-privilege IAM, HTTPS, environment separation',
+      'Operational tooling: health endpoints, structured logs, safe background processing with retries'
+    ],
+    lessonsLearned: [
+      'Webhook reliability: signature verification, idempotency patterns to prevent double-charging and double-provisioning',
+      'AWS production architecture: ECS/Fargate orchestration, RDS connectivity, ALB routing, custom domain with ACM',
+      'Data migrations in production: safe Prisma migration workflow, seeding strategies, rollback planning',
+      'Async job processing: worker service design, polling strategies, retry logic, failure handling',
+      'Production operations: health checks, structured logging, secrets rotation, environment management, deployment strategies'
+    ],
+    liveUrl: 'https://mysozofitness.com',
+    githubUrl: 'https://github.com/Osalira/sozofitness', // TODO: Update with actual repo URL
+    image: '/projects/sozofit.png',
+    category: 'SaaS',
+    featured: true
   }
 ]
 
