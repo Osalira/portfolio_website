@@ -7,7 +7,7 @@ export const personalInfo = {
   location: 'Victoria, BC',
   website: 'www.benosalira.com',
   github: 'https://github.com/Osalira',
-  linkedin: 'www.linkedin.com/in/benjamin-osalira-2012162b0',
+  linkedin: 'https://www.linkedin.com/in/benjamin-osalira-2012162b0/',
   
   bio: {
     short: 'Computer Science graduate with hands-on experience shipping a subscription SaaS product and building distributed microservices systems. Passionate about backend fundamentals, cloud architecture, and building scalable applications.',
